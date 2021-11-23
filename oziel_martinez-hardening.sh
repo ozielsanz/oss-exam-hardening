@@ -6,7 +6,7 @@ echo "  Hi, you´re using Centos "$version
 echo " The installation of the clamav antivirus is running..."
 echo " Checking if you have another version installed..."
 
-sudo yum list --installed | grep clamav &> /dev/null
+sudo yum list | grep clamav &> /dev/null
 
 if [ $? -ne 0 ];then
 	echo
